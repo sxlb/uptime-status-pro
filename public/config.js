@@ -1,12 +1,12 @@
 window.Config = {
 
   // 显示标题
-  SiteName: 'MJJ网站监控',
+  SiteName: '凉薄网站监控',
 
   // UptimeRobot Api Keys
   // 支持 Monitor-Specific 和 Read-Only
   ApiKeys: [
-    'ur2828404-32ec189c0d47d45b7f0a207a',
+    'ur2913485-22317660223116aebf4c24ee',
   ],
 
   // 日志天数
@@ -25,11 +25,11 @@ window.Config = {
   Navi: [
     {
       text: '主页',
-      url: 'https://www.xh.sd'
+      url: 'https://sxlb.xyz'
     },
     {
       text: 'Github',
-      url: 'https://github.com/caogens/uptime-status-pro'
+      url: 'https://github.com/sxlb/uptime-status-pro/'
     },
   ],
 };
