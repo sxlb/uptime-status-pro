@@ -179,43 +179,33 @@ a {
       }
       .status-indicator {
           position: relative;
-          width: 15px;
-          height: 15px;
-          border-radius: 50%;
+          width: auto;
+          height: 20px;
+          border-radius: 5px;
           display: flex;
           align-items: center;
           justify-content: center;
           margin-right: 5px;
           font-weight: bold;
-          transform: translateY(2px);
+          transform: translateY(0);
+          padding: 0 5px;
           &.ok {
               background: #3bd672;
+              color: white;
+              content: "正常";
           }
           &.down {
               background: #de484a;
+              color: white;
+              content: "故障";
           }
           &.unknow {
               background: #e5e8eb;
+              color: #333;
+              content: "未知";
           }
           &::after {
-              content: "";
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              width: 12px;
-              height: 12px;
-              border-radius: 50%;
-              transform: translate(-50%, -50%);
-              animation: ripple 1.5s infinite;
-          }
-          &.ok::after {
-              background: rgba(79, 214, 156, 0.75);
-          }
-          &.down::after {
-              background: rgba(222, 72, 74, 0.75);
-          }
-          &.unknow::after {
-              background: rgba(229, 232, 235, 0.75);
+              display: none;
           }
       }
       .status {
